@@ -3,14 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Layout Strony</title>
+    <style>
+        /* Style do figur */
+        .menu-figura {
+            position: relative;
+            margin: 10px auto;
+        }
+
+        #czerwony_trojkat {
+            width: 0;
+            height: 0;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-bottom: 59px solid red;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        #niebieski_prostokat {
+            width: 46px;
+            height: 46px;
+            background-color: blue;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        #zolty_trojkat {
+            width: 0;
+            height: 0;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-bottom: 59px solid yellow;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        #zielony_okrag {
+            width: 46px;
+            height: 46px;
+            background-color: green;
+            border-radius: 50%;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        #brazowy_prostokat {
+            width: 46px;
+            height: 46px;
+            background-color: brown;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!-- Tabela z layoutem -->
     <table width="65%" border="1" align="center">
         <tr>
             <td colspan="3" align="center">
-                <b>LOGO-Jasinski</b><br>
-                Gdańsk, 20-01-2025 (wpisz aktualną datę)
+               <iframe scrolling="no" width="900" height="100" name="obszar_logo" src="logo_jasinski.html" border="0"></iframe>
             </td>
         </tr>
         <tr>
@@ -19,29 +70,45 @@
                 <ul>
                     <li><a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a></li>
                     <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
-                    <li><a href="https://simple.wikipedia.org/" target="obszar_glowny">Simple Wikipedia</a></li>
-                 <li><a href="https://www.wikipedia.org/" target="obszar_glowny">Wikipedia</a></li>
+                    <li><a href="https://simple.wikipedia.org/" target="obszar_glowny">Strona Piłkarska</a></li>
+                    <li><a href="https://www.futbin.com" target="obszar_glowny">Wikipedia</a></li>
                 </ul>
             </td>
             <td align="center">
-                <iframe width="650" height="420" name="obszar_glowny" src="glowny_twoje_nazwisko.html" scrolling="yes" border="0"></iframe>
-                <b>OBASZAR GŁÓWNY</b>
+                <iframe width="650" height="420" name="obszar_glowny" src="glowny_kalinowski.html" scrolling="yes" border="0"></iframe>
             </td>
             <td width="18%" align="center">
                 <b>prawe menu</b>
-                <ul>
-                    <li><a href="plik_Jasinski.html" download>Kliknij, aby ściągnąć plik</a></li>
-                    <li><a href="tabela_Jasinski.html" target="obszar_glowny">Kliknij, aby zobaczyć tabelę</a></li>
-                    <li><a href="formularz_Jasinski.html" target="obszar_glowny">Kliknij, aby zobaczyć formularz</a></li>
-                    <li><a href="mailto:szymonjas3@gmail.com">Kliknij, aby wysłać pocztę</a></li>
-                    <li><a href="z1_z6_twoje_nazwisko.html" target="obszar_glowny">Zadania od Z1 do Z6</a></li>
-                </ul>
+                <div class="menu-figura">
+                    <a href="kalinowski_zip" download>
+                        <div id="niebieski_prostokat"></div>
+                    </a>
+                </div>
+                <div class="menu-figura">
+                    <a href="tabela_kalinowski.html" target="obszar_glowny">
+                        <div id="czerwony_trojkat"></div>
+                    </a>
+                </div>
+                <div class="menu-figura">
+                    <a href="forrmularz_kalinowski.html" target="obszar_glowny">
+                        <div id="zolty_okrag"></div>
+                    </a>
+                </div>
+                <div class="menu-figura">
+                    <a href="mailto:nikodem1234@outlook.com">
+                        <div id="zielony_prostokat"></div>
+                    </a>
+                </div>
+                <div class="menu-figura">
+                    <a href="z1_z6_kalinowski.html" target="obszar_glowny">
+                        <div id="brazowy_prostokat"></div>
+                    </a>
+                </div>
             </td>
         </tr>
         <tr>
             <td colspan="3" align="center">
-                <b>STOPKA-Jasinski</b><br>
-                Gdańsk, 20-01-2025 (wpisz aktualną datę)
+               <iframe scrolling="no" width="900" height="120" name="obszar_stopka" src="stopka_kalinowski.html" border="0"></iframe>
             </td>
         </tr>
     </table>
